@@ -1,5 +1,5 @@
-import { SpyObject } from './helper';
-import { SearchService } from '../search.service';
+import {SpyObject} from './helper';
+import {SearchService} from '../search.service';
 import Spy = jasmine.Spy;
 
 export class MockSearchService extends SpyObject {
@@ -10,7 +10,7 @@ export class MockSearchService extends SpyObject {
   fakeResponse: any;
 
   constructor() {
-    super( SearchService );
+    super(SearchService);
 
     this.fakeResponse = null;
     this.getAllSpy = this.spy('getAll').andReturn(this);
